@@ -1,0 +1,39 @@
+---
+---
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<link href="/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>
+			tokipona@yahoogroups.com archive
+		</h1>
+
+		<h2>threads</h2>
+
+		{% assign sorted = site.pages | sort:"date" %}
+		{% for p in sorted %}{% if p.hash %}
+			<div class="threadpreview">
+
+			    <span class="title">
+			    	<a href="threads/{{p.hash}}">{{p.title}}</a>
+			    	by
+			    	<cite>{{p.author}}</cite>
+				</span>
+				<span class="tags">
+					{% assign tags = p.tags %}
+					{% for tagname in p.tags %}
+						{% assign tag = site.data.tags[tagname] %}
+						<img src="/images/{{tag.image}}" title="{{tag.title}}" data-tag="{{tagname}}">
+					{% endfor %}
+				</span>
+			    <span>({{p.posts}} post{% if p.posts > 1 %}s{% endif %})</span>
+			    <time>{{p.date | split: " " | first}}</time>
+		    </div>
+
+		{% endif %}{% endfor %}
+	</body>
+</html>

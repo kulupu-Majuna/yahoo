@@ -1,0 +1,13 @@
+defaults:
+  -
+    scope:
+      path: "thread"
+    values:
+      layout: "thread"
+      tags: 
+        - none
+exclude:
+  - "README.md"
+collections_dir: _posts
+collections:
+  - t2

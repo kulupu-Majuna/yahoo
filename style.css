@@ -1,0 +1,62 @@
+body {
+	background: #eee;
+	width: 80%;
+	margin: 1rem auto;
+}
+h1 {
+	font-size: 1.7em;
+}
+.post {
+	background: white;
+	border: solid 1px black;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	margin: 0.2rem 0;
+	max-width: 50em;
+}
+.post > div {
+	padding: 0.2em 1em;
+}
+.post .metadata {
+	border-bottom: solid 1px black;
+}
+.post .content {
+	padding-top: 0;
+}
+
+cite {
+	font-style: normal;
+	font-weight: bold;
+}
+.post .metadata time {
+	float: right;
+}
+
+.post blockquote {
+	border-left: solid 0.2rem #ccc;
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+.reply {
+	padding-left: 1em;
+	margin-top: -0.2em;
+	padding-top: 0.2em;
+	border-left: solid 0.2rem #aaa;
+}
+
+
+.threadpreview {
+	display: flex;
+	column-gap: 1em;
+}
+.threadpreview:nth-child(2n+1) {
+	background: hsl(0 0 98%);
+}
+.threadpreview > .title {
+	flex-grow: 1;
+}
+.threadpreview .tags img {
+	height: 1em;
+	width: 1em;
+}

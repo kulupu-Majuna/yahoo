@@ -1,0 +1,43 @@
+english:
+  title: Discussion occurs in English
+  image: unitedkingdom.png
+tokipona:
+  title: Full sentences of toki pona are used for communication
+  image: tokiponaflag.png
+esperanto:
+  title: Discussion occurs in Esperanto
+  image: esperanto.jpg
+tokiponataso:
+  title: Discussion occurs primarily in toki pona
+  image: tokiponaflag.png
+otherlang:
+  title: Post includes languages other than toki pona, English, and esperanto
+  image: globe.png
+
+translation:
+  title: Toki pona text provided with translated
+  image: translation.jpg
+media:
+  title: Significant amount of toki pona text
+  image: book.jpg
+wordlist:
+  title: Contains a list of toki pona words or phrases with translations
+  image: list.png
+
+languagechange:
+  title: Discussing or announcing a change to toki pona
+  image: rotate.png
+
+external:
+  title: Links to an archived relevant website
+  image: link.png
+linkrot:
+  title: Some insignificant links are broken
+  image: brokenlink.png
+lostmedia:
+  title: Links to significant toki pona content with no known archive.
+  image: filenotfound.jpg
+
+none:
+  title: This thread is yet to be processed.
+  image: questionmark.jpg

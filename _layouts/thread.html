@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav>
+      <a href="/">tokipona@yahoogroups.com archive</a>
+    </nav>
+
+    <h1>
+      {{page.title}}
+    </h1>
+    Source: {% for src in page.sources %}<a href="{{src}}">{% if src contains "forums.tokipona.org" %}forums.tokipona.org{% elsif src contains "tokipona.yahoogroups.narkive.com" %}narkive.com{% else %}{{src}}{% endif %}</a> {% endfor %}
+
+
+    {% assign prevnest = 0 %}
+    {% for reply in site[page.hash] %}
+      {% if reply.nestinglevel > prevnest %}
+        <div class="reply">
+      {% endif %}
+
+      {% if reply.nestinglevel < prevnest %}
+        {% for i in (reply.nestinglevel .. prevnest) %}
+          </div class="reply">
+        {% endfor %}
+      {% endif %}
+
+      <section class="post" id="post{{forloop.index}}"> 
+        <div class="metadata">
+          <cite>{{ reply.author }}</cite>
+          <time>{{ reply.date }}</time>
+        </div>
+        <div class="content">
+          {{ reply.content }}
+        </div>
+      </section>
+
+      {% assign prevnest = reply.nestinglevel %}
+    {% endfor %}
+  </body>
+</html>
