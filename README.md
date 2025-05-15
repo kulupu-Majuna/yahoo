@@ -9,7 +9,7 @@ Currently only a very small portion of threads have been analysed.
 ## Building
 This repo is structured as a jekyll website, you'll be able to view it on github pages.
 
-To host the site locally, just install jekyll, download the code, and run `jekyll serve` from the folder containing this README.
+To host the site locally, make sure you have ruby installed then run `bundle install` and `bundle exec jekyll serve` from the folder containing this README.
 
 ## File Structure
 
