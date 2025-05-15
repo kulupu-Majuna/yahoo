@@ -1,7 +1,8 @@
+theme: null
 defaults:
   -
     scope:
-      path: "thread"
+      path: "threads"
     values:
       layout: "thread"
       tags: 
