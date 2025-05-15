@@ -27,6 +27,9 @@ wordlist:
 grammar:
   title: Discussion or explanation on toki pona grammar
   image: penpaper.png
+philosophy:
+  title: Discussion or explanation on the philosophy behind toki pona
+  image: philosophy.png
 languagechange:
   title: Discussing or announcing a change to toki pona
   image: rotate.png
