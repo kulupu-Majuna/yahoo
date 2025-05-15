@@ -18,18 +18,19 @@
 
 
     {% assign prevnest = 0 %}
-    {% for reply in site[page.hash] %}
+    {% assign replies = site[page.hash] | sort:'path' %}
+    {% for reply in replies %}
       {% if reply.nestinglevel > prevnest %}
         <div class="reply">
       {% endif %}
 
       {% if reply.nestinglevel < prevnest %}
         {% for i in (reply.nestinglevel .. prevnest) %}
-          </div class="reply">
+          {% if i != prevnest %}</div class="reply">{% endif %}
         {% endfor %}
       {% endif %}
 
-      <section class="post" id="post{{forloop.index}}"> 
+      <section class="post" data-nestinglvl="{{reply.nestinglevel}}" id="post{{forloop.index}}"> 
         <div class="metadata">
           <cite>{{ reply.author }}</cite>
           <time>{{ reply.date }}</time>
