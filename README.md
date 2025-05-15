@@ -63,9 +63,8 @@ Other formatting includes:
 > Quotations, which are shown as lines prefixed with a '> '.
 > When a quotation is just the entire previous email, it will be ommitted.
 >> Multiple layers of quotations are written with repeated '>'.
->>
-> Quotation blocks always end with an empty line with appropriate prefixing
 >
+> Quotation blocks always end with an empty line
 
 Email signatures are indicated by inserting three asterisks before them.
 These indicate text that is repeated at the all an author's emails, that is generally irrelevant to the topic at hand. 

@@ -24,9 +24,15 @@ wordlist:
   title: Contains a list of toki pona words or phrases with translations
   image: list.png
 
+grammar:
+  title: Discussion or explanation on toki pona grammar
+  image: penpaper.png
 languagechange:
   title: Discussing or announcing a change to toki pona
   image: rotate.png
+audio:
+  title: Contains (link to) audio of toki pona being spoken or sung
+  image: audio.png
 
 external:
   title: Links to an archived relevant website
