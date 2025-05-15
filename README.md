@@ -57,7 +57,7 @@ These are either directly in the source or are representend in the same way as s
 
 When links have known archives, they will be represented like this: [https://web.archive.org/](https://web.archive.org/web/20020124143456/http://web.archive.org/index.html) or wikipedia ?oldid= urls prefered. When they don't, they will just be represented as plaintext urls like https://tokipona.org/.
 
-Ocassionally you will see internal links, if this is a link to an email on the same page it will be of the form [original url](#postN) where N is a number. If it's a link to a different page it'll be of the form [original url]({% link path/to/file.md %}#postN) (the #postN might not be present).
+Ocassionally you will see internal links, if this is a link to an email on the same page it will be of the form `[original url](#postN)` where N is a number. If it's a link to some different page it'll be of the form `[original url]({{ 'local url' | relative_url}})`. Any other \{\{ or \}\} will be escaped.
 
 Other formatting includes:
 - Bullet point lists, indicated with lines starting with '- ' like so (it's okay to just show these in plaintext)

@@ -7,6 +7,7 @@ defaults:
       layout: "thread"
       tags: 
         - none
+# baseurl: '/yahoo' # useful for testing relative URLs
 exclude:
   - "README.md"
 collections_dir: _posts

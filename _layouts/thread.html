@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link href="/style.css" rel="stylesheet">
+    <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
 
     <nav>
-      <a href="{% link index.html %}">tokipona@yahoogroups.com archive</a>
+      <a href="{{ '/' | relative_url }}">tokipona@yahoogroups.com archive</a>
     </nav>
 
     <h1>

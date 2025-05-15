@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
-		<link href="/style.css" rel="stylesheet">
+		<link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
 	</head>
 	<body>
 		<h1>
@@ -27,7 +27,7 @@
 					{% assign tags = p.tags %}
 					{% for tagname in p.tags %}
 						{% assign tag = site.data.tags[tagname] %}
-						<img src="/images/{{tag.image}}" title="{{tag.title}}" data-tag="{{tagname}}">
+						<img src="{{ '/images/' | relative_url }}{{tag.image}}" title="{{tag.title}}" data-tag="{{tagname}}">
 					{% endfor %}
 				</span>
 			    <span>({{p.posts}} post{% if p.posts > 1 %}s{% endif %})</span>
