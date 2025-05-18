@@ -24,6 +24,10 @@ wordlist:
   title: Contains a list of toki pona words or phrases with translations
   image: list.png
 
+tokiponisation:
+  title: Discusses transliterating names into toki pona 
+  image: tokiponaflag.png
+
 grammar:
   title: Discussion or explanation on toki pona grammar
   image: penpaper.png
